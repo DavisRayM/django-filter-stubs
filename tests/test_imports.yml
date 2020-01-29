@@ -1,0 +1,18 @@
+- case: imports_typecheck
+  main: |
+      import django_filters.compat
+      import django_filters.conf
+      import django_filters.constants
+      import django_filters.exceptions
+      import django_filters.fields
+      import django_filters.filters
+      import django_filters.filterset
+      import django_filters.models
+      import django_filters.utils
+      import django_filters.views
+      import django_filters.widgets
+      import django_filters.rest_framework.backends
+      import django_filters.rest_framework.filters
+      import django_filters.rest_framework.filterset
+  out: |
+      ../../home/travis/build/DavisRayM/django-filter-stubs/django_filters-stubs/widgetsi:14: error: Signature of "render" incompatible with supertype "Widget"
