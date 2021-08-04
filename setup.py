@@ -30,7 +30,8 @@ setup(
     install_requires=[
         "mypy>=0.750",
         "django-stubs>=1.3.0",
-        "djangorestframework-stubs>=0.4.0" "typing-extensions>=3.7.4",
+        "djangorestframework-stubs>=0.4.0",
+        "typing-extensions>=3.7.4",
     ],
     classifiers=[
         "Development Status :: 1 - Planning",
