@@ -1,6 +1,7 @@
 import os
 
 from setuptools import setup
+from pathlib import Path
 
 name = "django-filter-stubs"
 
@@ -16,11 +17,15 @@ def find_stub_files(name):
                 result.append(f)
     return result
 
+long_description = (Path(__file__).parent / "README.md").read_text()
+
 
 setup(
     name="django-filter-stubs",
     version="0.1.2",
     description="PEP-484 stubs for django-filter",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     license="MIT",
     url="https://github.com/DavisRayM/django-filter-stubs",
     author="Davis Raymond Muro",
