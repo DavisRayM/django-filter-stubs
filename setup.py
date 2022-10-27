@@ -19,7 +19,7 @@ def find_stub_files(name):
 
 setup(
     name="django-filter-stubs",
-    version="0.1.1",
+    version="0.1.2",
     description="PEP-484 stubs for django-filter",
     license="MIT",
     url="https://github.com/DavisRayM/django-filter-stubs",
