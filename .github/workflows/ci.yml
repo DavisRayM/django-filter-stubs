@@ -28,7 +28,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install pipenv
-          pipenv install --dev
+          pipenv install --dev --deploy
 
       - name: Black
         run: pipenv run black --check django_filters-stubs/
