@@ -1,7 +1,7 @@
 import os
+from pathlib import Path
 
 from setuptools import setup
-from pathlib import Path
 
 name = "django-filter-stubs"
 
