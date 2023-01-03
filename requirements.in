@@ -1,6 +1,6 @@
 -e .
 
-black==22.12.0
+black
 flake8
 isort
 pytest-mypy-plugins
