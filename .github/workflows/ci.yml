@@ -24,10 +24,18 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: 'pip'
 
-      - name: Install requirements
+      - name: Upgrade pip
+        run: pip install --upgrade pip
+      
+      - name: Install requirements (3.6)
         run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements-3.6.txt
+        if: matrix.python-version == '3.6'
+
+      - name: Install requirements (3.7+)
+        run: |
+          pip install -r requirements.txt 
+        if: matrix.python-version != '3.6'         
 
       - name: Black
         run: black --check django_filters-stubs/
