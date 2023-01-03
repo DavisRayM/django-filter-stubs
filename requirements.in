@@ -1,0 +1,7 @@
+-e .
+
+black==22.12.0
+flake8
+isort
+pytest-mypy-plugins
+pip-tools

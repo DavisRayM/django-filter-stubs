@@ -17,6 +17,7 @@ def find_stub_files(name):
                 result.append(f)
     return result
 
+
 long_description = (Path(__file__).parent / "README.md").read_text()
 
 

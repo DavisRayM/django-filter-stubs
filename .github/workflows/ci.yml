@@ -27,17 +27,16 @@ jobs:
       - name: Install Pipenv requirements
         run: |
           pip install --upgrade pip
-          pip install pipenv
-          pipenv install --dev --deploy
+          pip install -r requirements.txt
 
       - name: Black
-        run: pipenv run black --check django_filters-stubs/
+        run: black --check django_filters-stubs/
       
       - name: isort
-        run: pipenv run isort --check
+        run: isort --check django_filters-stubs
 
       - name: flake8
-        run: pipenv run flake8
+        run: flake8
 
       - name: pytest
-        run: pipenv run pytest
+        run: pytest -vvv
