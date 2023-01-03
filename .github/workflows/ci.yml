@@ -8,7 +8,7 @@ on:
       - master
 
 jobs:
-  publish:
+  ci:
     runs-on: ubuntu-20.04 # 22.04 doesn't have Python 3.6
     strategy:
       fail-fast: false
