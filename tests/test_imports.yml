@@ -14,5 +14,3 @@
       import django_filters.rest_framework.backends
       import django_filters.rest_framework.filters
       import django_filters.rest_framework.filterset
-  out: |
-      ../../home/travis/build/DavisRayM/django-filter-stubs/django_filters-stubs/widgetsi:14: error: Signature of "render" incompatible with supertype "Widget"

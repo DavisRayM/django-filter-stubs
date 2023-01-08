@@ -1,7 +1,7 @@
 import os
+from pathlib import Path
 
 from setuptools import setup
-from pathlib import Path
 
 name = "django-filter-stubs"
 
@@ -16,6 +16,7 @@ def find_stub_files(name):
                     f = os.path.join(sub_root, f)
                 result.append(f)
     return result
+
 
 long_description = (Path(__file__).parent / "README.md").read_text()
 
@@ -41,7 +42,6 @@ setup(
     classifiers=[
         "Development Status :: 1 - Planning",
         "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
     ],
 )
