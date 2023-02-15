@@ -26,32 +26,22 @@ click==8.1.3
     #   pip-tools
 decorator==5.1.1
     # via pytest-mypy-plugins
-django==3.2.16
+django==3.2.18
     # via
     #   django-stubs
     #   django-stubs-ext
 django-stubs==1.13.1
     # via
-    #   django-filter-stubs
     #   djangorestframework-stubs
+    #   sanitized-package
 django-stubs-ext==0.7.0
     # via django-stubs
 djangorestframework-stubs==1.8.0
-    # via django-filter-stubs
-exceptiongroup==1.1.0
-    # via pytest
+    # via sanitized-package
 flake8==5.0.4
     # via -r requirements.in
 idna==3.4
     # via requests
-importlib-metadata==4.2.0
-    # via
-    #   build
-    #   click
-    #   flake8
-    #   pep517
-    #   pluggy
-    #   pytest
 iniconfig==1.1.1
     # via pytest
 isort==5.11.4
@@ -60,10 +50,10 @@ mccabe==0.7.0
     # via flake8
 mypy==0.991
     # via
-    #   django-filter-stubs
     #   django-stubs
     #   djangorestframework-stubs
     #   pytest-mypy-plugins
+    #   sanitized-package
 mypy-extensions==0.4.3
     # via
     #   black
@@ -101,17 +91,7 @@ requests==2.28.1
 sqlparse==0.4.3
     # via django
 tomli==2.0.1
-    # via
-    #   black
-    #   build
-    #   django-stubs
-    #   mypy
-    #   pep517
-    #   pytest
-typed-ast==1.5.4
-    # via
-    #   black
-    #   mypy
+    # via django-stubs
 types-pytz==2022.7.0.0
     # via django-stubs
 types-pyyaml==6.0.12.2
@@ -124,22 +104,15 @@ types-urllib3==1.26.25.4
     # via types-requests
 typing-extensions==4.4.0
     # via
-    #   black
-    #   django-filter-stubs
     #   django-stubs
     #   django-stubs-ext
     #   djangorestframework-stubs
-    #   importlib-metadata
     #   mypy
-    #   platformdirs
+    #   sanitized-package
 urllib3==1.26.13
     # via requests
 wheel==0.38.4
     # via pip-tools
-zipp==3.11.0
-    # via
-    #   importlib-metadata
-    #   pep517
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
