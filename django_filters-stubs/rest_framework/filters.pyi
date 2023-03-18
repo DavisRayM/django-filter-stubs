@@ -1,7 +1,6 @@
 from typing import Any
 
 from django_filters import (
-    filters,
     AllValuesFilter,
     AllValuesMultipleFilter,
     BaseCSVFilter,
@@ -31,6 +30,7 @@ from django_filters import (
     TypedChoiceFilter,
     TypedMultipleChoiceFilter,
     UUIDFilter,
+    filters,
 )
 
 class BooleanFilter(filters.BooleanFilter):
