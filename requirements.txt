@@ -4,7 +4,7 @@
 #
 #    pip-compile
 #
--e file:///home/palfrey/src/django-filter-stubs
+-e .
     # via -r requirements.in
 asgiref==3.6.0
     # via django
