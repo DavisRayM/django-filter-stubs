@@ -1,0 +1,6 @@
+- case: rest_framework
+  main: |
+    from django_filters import rest_framework as filters
+
+    class TestFilter(filters.FilterSet):
+      special_date = filters.DateFilter() # Mypy: Module has no attribute "DateFilter" [attr-defined]
