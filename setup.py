@@ -23,7 +23,7 @@ long_description = (Path(__file__).parent / "README.md").read_text()
 
 setup(
     name="django-filter-stubs",
-    version="0.1.2",
+    version="0.1.3",
     description="PEP-484 stubs for django-filter",
     long_description=long_description,
     long_description_content_type="text/markdown",
