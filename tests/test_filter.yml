@@ -1,0 +1,22 @@
+- case: filter_has_parent_property
+  main: |
+    from myapp.models import ProductFilter
+    name = ProductFilter().filters["name"]
+    reveal_type(name) # N: Revealed type is "django_filters.filters.Filter" 
+    reveal_type(name.parent) # N: Revealed type is "django_filters.filterset.FilterSet" 
+  files:
+    - path: myapp/__init__.py
+    - path: myapp/models.py
+      content: |
+        from django.db import models
+        import django_filters
+        
+        class Product(models.Model):
+            name = models.CharField(max_length=255)
+
+        class ProductFilter(django_filters.FilterSet):
+            name = django_filters.CharFilter()
+
+            class Meta:
+                model = Product
+                fields = ['name']
