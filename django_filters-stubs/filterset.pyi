@@ -1,4 +1,4 @@
-from typing import Any, Optional
+from typing import Any, Optional, TypeVar
 
 from .conf import settings
 from .constants import ALL_FIELDS
@@ -75,4 +75,6 @@ class BaseFilterSet:
 
 class FilterSet(BaseFilterSet, metaclass=FilterSetMetaclass): ...
 
-def filterset_factory(model: Any, fields: Any = ...): ...
+_F = TypeVar("_F", bound=FilterSet)
+
+def filterset_factory(model: Any, filterset: type[_F] | None = ..., fields: Any = ...) -> type[_F]: ...
