@@ -17,7 +17,7 @@ class Filter:
         method: Optional[Any] = ...,
         distinct: bool = ...,
         exclude: bool = ...,
-        **kwargs: Any
+        **kwargs: Any,
     ) -> None: ...
     def get_method(self, qs: Any): ...
     method: Callable = ...
@@ -108,7 +108,7 @@ class DateRangeFilter(ChoiceFilter):
         choices: Optional[Any] = ...,
         filters: Optional[Any] = ...,
         *args: Any,
-        **kwargs: Any
+        **kwargs: Any,
     ) -> None: ...
     def filter(self, qs: Any, value: Any): ...
 
@@ -154,7 +154,7 @@ class LookupChoiceFilter(Filter):
         field_name: Optional[Any] = ...,
         lookup_choices: Optional[Any] = ...,
         field_class: Optional[Any] = ...,
-        **kwargs: Any
+        **kwargs: Any,
     ) -> None: ...
     @classmethod
     def normalize_lookup(cls, lookup: Any): ...
