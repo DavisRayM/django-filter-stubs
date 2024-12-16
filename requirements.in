@@ -4,4 +4,3 @@ black==24.8.0
 flake8==7.1.1
 isort==5.13.2
 pytest-mypy-plugins==3.1.2
-pip-tools==7.4.1
