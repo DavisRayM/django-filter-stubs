@@ -23,7 +23,7 @@ long_description = (Path(__file__).parent / "README.md").read_text()
 
 setup(
     name="django-filter-stubs",
-    version="0.1.3",
+    version="0.1.4",
     description="PEP-484 stubs for django-filter",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -33,6 +33,7 @@ setup(
     author_email="davisraymondmuro@outlook.com",
     packages=["django_filters-stubs"],
     package_data={"django_filters-stubs": find_stub_files("django_filters-stubs")},
+    python_requires=">=3.8",
     install_requires=[
         "mypy>=0.750",
         "django-stubs>=1.3.0",
@@ -42,6 +43,6 @@ setup(
     classifiers=[
         "Development Status :: 1 - Planning",
         "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
     ],
 )
