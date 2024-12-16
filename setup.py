@@ -31,8 +31,8 @@ setup(
     url="https://github.com/DavisRayM/django-filter-stubs",
     author="Davis Raymond Muro",
     author_email="davisraymondmuro@outlook.com",
-    packages=['django_filters-stubs'],
-    package_data={"django_filters-stubs": find_stub_files('django_filters-stubs')},
+    packages=["django_filters-stubs"],
+    package_data={"django_filters-stubs": find_stub_files("django_filters-stubs")},
     install_requires=[
         "mypy>=0.750",
         "django-stubs>=1.3.0",
