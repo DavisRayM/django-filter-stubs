@@ -33,7 +33,7 @@ jobs:
         run: uv run isort --check django_filters-stubs
 
       - name: flake8
-        run: uv run flake8
+        run: uv run flake8 django_filters-stubs
 
       - name: pytest
         run: uv run pytest -vvv
