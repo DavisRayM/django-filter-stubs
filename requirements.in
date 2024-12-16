@@ -1,7 +1,0 @@
--e .
-
-black
-flake8
-isort
-pytest-mypy-plugins
-pip-tools
