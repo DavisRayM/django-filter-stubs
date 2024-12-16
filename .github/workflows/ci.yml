@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,9 +27,9 @@ jobs:
       - name: Upgrade pip
         run: pip install --upgrade pip
       
-      - name: Install requirements (3.7+)
+      - name: Install requirements (3.8+)
         run: |
-          pip install -r requirements.txt 
+          pip install -r requirements.in
     
 
       - name: Black
