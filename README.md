@@ -1,3 +1,4 @@
+**Archived use [types-django-filter](https://pypi.org/project/types-django-filter)**
 # PEP-484 Stubs for django-filter ::: Beta
 
 [![CI](https://github.com/DavisRayM/django-filter-stubs/actions/workflows/ci.yml/badge.svg)](https://github.com/DavisRayM/django-filter-stubs/actions/workflows/ci.yml)
